@@ -1,5 +1,20 @@
 import styled from "styled-components";
 
+export const StyledIcon = styled.img`
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: gray;
+  padding: 4px;
+  border: 1px solid #333333;
+
+  &:hover {
+    transition: 0.7s;
+    background-color: #333333;
+  }
+`;
+
 export const StyledHeader = styled.header`
   background-color: #87a7ff;
   padding: 6px 16px;
@@ -68,12 +83,11 @@ export const ModalDivButton = styled.div`
   align-items: center;
 `;
 
-export const ModalHeader = styled.div` 
+export const ModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
-
 
 export const NavigationComponent = styled.div`
   background-color: #87a7ff;

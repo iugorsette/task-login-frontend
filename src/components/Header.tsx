@@ -1,7 +1,8 @@
 import { ImageButton } from "../App.styled";
-import { StyledHeader } from "./Component.styled";
+import { StyledHeader, StyledIcon } from "./Component.styled";
 import signout from "../assets/sign-out.svg";
 import signin from "../assets/sign-in.svg";
+import postit from "../assets/postit.png";
 
 export function Header({ isLogged }) {
   function logOut() {
@@ -13,7 +14,9 @@ export function Header({ isLogged }) {
   }
   return (
     <StyledHeader>
-      <h1>Post-it</h1>
+      <div>
+        <StyledIcon src={postit} alt="" />
+      </div>
       {isLogged ? (
         <ImageButton onClick={logOut} color="red">
           <img src={signout} alt="" />{" "}
