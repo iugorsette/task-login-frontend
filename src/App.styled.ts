@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const GlobalStyle = styled.div`
+  background-color: gray;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+`;
+
 export const FormContainer = styled.div`
   background-color: #1e1e1e;
   color: #ffffff;
